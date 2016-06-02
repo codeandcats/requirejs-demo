@@ -1,3 +1,7 @@
+<center>
+  <img src="https://raw.githubusercontent.com/codeandcats/requirejs-demo/master/logo.png" />
+</center>
+
 # RequireJS Demo
 This was a simple experiment that tests a strategy of mixing "legacy" scripts already defined in the global scope with new TypeScript scripts loaded by RequireJS.
 
