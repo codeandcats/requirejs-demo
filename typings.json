@@ -1,0 +1,10 @@
+{
+  "version": false,
+  "dependencies": {
+    "knockout": "registry:npm/knockout#3.4.0+20160516171930"
+  },
+  "resolution": "./TypeScript/Typings/External",
+  "globalDependencies": {
+    "jquery": "registry:dt/jquery#1.10.0+20160417213236"
+  }
+}

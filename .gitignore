@@ -31,3 +31,10 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+# Typings (managed via typings utility)
+TypeScript/Typings/External
+
+# Generated js & map
+TypeScript/App/**/*.js
+TypeScript/App/**/*.js.map

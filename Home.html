@@ -1,0 +1,39 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>RequireJS Demo</title>
+		<link rel="stylesheet" type="text/css" href="Content/style.css" />
+		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>RequireJS Demo</h1>
+				
+				<p>Demonstrates a dummy web app with "legacy" js scripts in the global scope, mixed with TypeScript scripts loaded by RequireJS.</p>
+				
+				<button id="doTheThing" class="btn btn-lg btn-primary">Do The Thing!</button>
+			</div>
+			
+			<div id="message-list"></div>
+		</div>
+		
+		<!-- Existing Third Party Libraries -->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="node_modules/knockout/build/output/knockout-latest.js"></script>
+		
+		<script src="node_modules/requirejs/require.js"></script>
+		
+		<script>
+			// Need to define pre-existing libraries
+			define('jquery', [], function() { return jQuery; });
+			define('ko', [], function() { return ko; });
+			
+			// TypeScript entry point for this page
+			require(['TypeScript/App/Views/Home.js'], function(home) {
+				var handler = new home.HomeHandler('#doTheThing');
+			});
+		</script>
+	</body>
+</html>
