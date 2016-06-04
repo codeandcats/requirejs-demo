@@ -1,0 +1,32 @@
+{
+  "name": "requirejs-demo",
+  "version": "1.0.0",
+  "description": "Simple experiment that tests strategy of mixing legacy scripts already defined in the global scope with TypeScript loaded by RequireJS.",
+  "main": "home.html",
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "requirejs": "^2.2.0",
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "del /S \"TypeScript\\*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeandcats/requirejs-demo.git"
+  },
+  "keywords": [
+    "require",
+    "requirejs",
+    "require.js",
+    "typescript"
+  ],
+  "author": "Ben <codeandcats@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeandcats/requirejs-demo/issues"
+  },
+  "homepage": "https://github.com/codeandcats/requirejs-demo#readme"
+}
